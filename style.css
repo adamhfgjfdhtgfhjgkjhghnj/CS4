@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #1e293b, #7c3aed, #06b6d4);
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  padding: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  background: rgba(0,0,0,0.3);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
