@@ -2,68 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Computing Issues</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
-<h1>Legal, Ethical & Privacy Issues in Computing</h1>
-<p>Understanding the real impact of technology on society</p>
+  <nav class="navbar">
+    <div class="logo">ComputeEthics</div>
+    <div class="nav-links">
+      <a href="#legal">Legal</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#impact">Impact</a>
+      <a href="#security">Security</a>
+      <a href="#licenses">Licenses</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Computing Issues & Ethics</h1>
+    <p>Understanding legal, ethical, social, and privacy impacts of technology</p>
+    <a href="#legal" class="hero-btn">Explore</a>
+  </div>
 </header>
 
-<div class="container">
+<main class="container">
 
-<div class="card">
-<h2>Legal Issues & Intellectual Property</h2>
-<p>Copyright laws and software licenses protect creators but can also limit innovation by restricting access to tools and content.</p>
-</div>
+<section id="legal" class="card">
+<h2>Legal & Intellectual Property</h2>
+<p>
+Intellectual property laws protect creators by preventing unauthorized copying of software and content.
+However, they can also limit innovation because developers may not be able to freely build on existing work.
+Open source licenses allow more freedom, while proprietary licenses are more restrictive.
+</p>
+</section>
 
-<div class="card">
+<section id="privacy" class="card">
 <h2>Privacy Concerns</h2>
-<p>Data is collected automatically through apps and websites, often without users fully realizing it. This raises concerns about control and security.</p>
-</div>
+<p>
+Modern systems collect data automatically through apps and websites. This includes location, searches,
+and user behavior. Many users are not fully aware of how much data is being generated and stored.
+</p>
+<p>
+This raises concerns about who controls the data and how it is used, especially when sensitive information
+is involved.
+</p>
+</section>
 
-<div class="card">
-<h2>Social & Economic Impact</h2>
-<p>Data improves services but can lead to surveillance and misuse. Companies benefit economically while users may lose privacy.</p>
+<section id="impact" class="card">
+<h2>Social, Economic & Cultural Impact</h2>
+<div class="grid">
+  <div class="mini-card">
+    <h3>Social</h3>
+    <p>Technology changes communication and social behavior.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Economic</h3>
+    <p>Companies benefit from user data, but privacy may be reduced.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Cultural</h3>
+    <p>Computing connects global cultures but can also change traditions.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Environmental</h3>
+    <p>E-waste and energy use affect the environment.</p>
+  </div>
 </div>
+</section>
 
-<div class="card">
-<h2>Environmental Impact</h2>
-<p>Computing increases e waste and energy use, affecting the environment globally.</p>
+<section id="security" class="card">
+<h2>Threats & Protection</h2>
+<div class="grid">
+  <div class="mini-card">
+    <h3>Malware</h3>
+    <p>Viruses, spyware, and ransomware can steal or damage data.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Phishing</h3>
+    <p>Fake messages trick users into giving personal information.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Protection</h3>
+    <p>Use strong passwords, updates, and antivirus tools.</p>
+  </div>
+  <div class="mini-card">
+    <h3>Encryption</h3>
+    <p>Protects data so only authorized users can access it.</p>
+  </div>
 </div>
+</section>
 
-<div class="card">
-<h2>Security & Protection</h2>
-<p>Malware like phishing and ransomware can damage systems. Strong passwords, encryption, and updates help protect data.</p>
-</div>
+<section id="licenses" class="card">
+<h2>Software Licenses</h2>
+<p>
+Software licenses control how programs can be used and shared. Proprietary licenses restrict use,
+while open source licenses allow modification and distribution.
+</p>
+<p>
+Choosing the right license depends on fairness, purpose, and how much freedom users need.
+</p>
+</section>
 
-<div class="card">
+<section id="quiz" class="card quiz-card">
 <h2>Quiz</h2>
 
-<p>1. What is a benefit of intellectual property laws?</p>
-<input type="radio" name="q1" value="1"> Protect creators<br>
-<input type="radio" name="q1" value="0"> Remove innovation<br>
+<div class="question">
+<p>1. What do intellectual property laws do?</p>
+<label><input type="radio" name="q1" value="a"> Protect creators</label>
+<label><input type="radio" name="q1" value="b"> Delete data</label>
+</div>
 
+<div class="question">
 <p>2. What is a privacy concern?</p>
-<input type="radio" name="q2" value="1"> Data tracking<br>
-<input type="radio" name="q2" value="0"> Faster internet<br>
+<label><input type="radio" name="q2" value="a"> Data tracking</label>
+<label><input type="radio" name="q2" value="b"> Faster WiFi</label>
+</div>
 
-<p>3. What is an environmental issue?</p>
-<input type="radio" name="q3" value="1"> E waste<br>
-<input type="radio" name="q3" value="0"> WiFi speed<br>
+<div class="question">
+<p>3. What is malware?</p>
+<label><input type="radio" name="q3" value="a"> Harmful software</label>
+<label><input type="radio" name="q3" value="b"> Safe program</label>
+</div>
 
-<p>4. Which is a cyber threat?</p>
-<input type="radio" name="q4" value="1"> Ransomware<br>
-<input type="radio" name="q4" value="0"> Monitor<br>
+<div class="question">
+<p>4. Which license allows modification?</p>
+<label><input type="radio" name="q4" value="a"> Open source</label>
+<label><input type="radio" name="q4" value="b"> Proprietary</label>
+</div>
 
 <button onclick="checkQuiz()">Submit</button>
-<p id="result"></p>
+<div id="result"></div>
 
-</div>
+</section>
 
-</div>
+</main>
 
 <script src="script.js"></script>
 </body>
