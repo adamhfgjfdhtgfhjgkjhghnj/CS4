@@ -1,22 +1,54 @@
 body {
   font-family: Arial;
-  background: linear-gradient(135deg, #1e293b, #7c3aed, #06b6d4);
+  background: linear-gradient(135deg, #0f172a, #7c3aed, #06b6d4);
   color: white;
-  text-align: center;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .hero {
-  padding: 50px;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background: orange;
+  border-radius: 20px;
+  color: white;
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .card {
   background: rgba(0,0,0,0.3);
-  margin: 20px;
-  padding: 20px;
+  padding: 25px;
+  margin: 20px 0;
   border-radius: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.mini-card {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
 }
